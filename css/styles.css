@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+    font-family: 'Krub', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-size: 16px;
+
+}
+.sombra {
+         -webkit-box-shadow: 0px 5px 15px 0px rgba(138,124,138,0.39);
+         -moz-box-shadow: 0px 5px 15px 0px rgba(138,124,138,0.39);
+          box-shadow: 0px 5px 15px 0px rgba(138,124,138,0.39);
+          padding: 2 rem;
+}
+.header-superior {
+    
+    background-image: url(../img/Firma_1trans.png);
+    background-repeat:no-repeat ;
+    padding: 3rem;
+    max-width:120rem; 
+    display: flex;
+}
+
+@media (min-width: 480px){
+    .menu-horizontal{
+        flex-direction: column;
+    }
+        
+    }
+
+.menu-horizontal{
+    
+    margin: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content:right;
+    list-style: none;
+    
+}
+
+.menu-horizontal > li >a{
+
+display: block;
+padding: 15px 20px;
+color: rgb(83, 83, 77);
+text-decoration: none;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: white;
+
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    display: block;
+    color:black;
+    padding: 15px 20px;
+    }
+.menu-horizontal >li:hover{
+    background-color: rgb(159, 170, 166);
+}
+
+.fondo{
+    background-image: url(../img/pileta.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    padding: 40rem;
+    margin:1rem;
+    
+}
+h1  {
+    text-align: center;
+    padding: 2 rem;
+    text-transform: uppercase;
+    padding: 3rem;
+}
+h3{
+    text-align: center;
+ 
+}
+p{
+    text-align: center;
+}
+.servicios .servicio img{
+width: 250px;
+border-radius: 125px;
+padding: 3rem;
+}
+
+@media (min-width: 480px){
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 5rem;
+    
+}
+}
+/** empieza aqui el footer**/
+
+.footer {
+    
+    background-color: rgb(155, 163, 156);
+    position: relative;
+    
+ }
+ 
+ .footer b{
+     text-align:start;
+
+ } 
+ 
+ 
+.footer div .cpi img{
+    width: 50px;
+
+}
+ .contenido-footer .iconos img{
+  width: 50px;
+  
+  
+  }
+  
+  
+  .contenido-footer{
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .footer h3{
+     text-transform: uppercase;
+     text-align: start;
+     padding: 2 rem;
+     margin: 1rem;
+ }     
+ /* termina footer*/
+  .logo{
+      width: 80px;
+  }
+  .header-superior {
+    
+     font-size:20px;
+     padding: 3rem;
+     margin: 1rem;
+  }
+ 
+   @media (min-width: 480px) {
+.servicio-sombra{
+    flex-direction: row;
+}
+          
+          }
+
+    /**css de alquiler casas**/
+    
+    .galeria{
+        background-image: url(../img/concepto-casa-modelo-juguete-llaves-fondo-borroso_23-2148301718.jpg);
+        background-image: url(../img/copie-fondo-espacio-azul-llaves-casa_23-2148301766\ \(1\).jpg);
+        background-image: url(../img/images.jpg);
+        background-image: url(../img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg);
+        width: auto;
+    }
+    
+/*formulario de contacto*/
+
+
+.formulario{
+    background-color: rgb(146, 146, 156);
+    width: 600px;
+    height: 456px;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;       
+}
+  
+.contenedor-formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+   
+}
+.formulario legend{
+    text-align: center;
+   font-size: 1.8 rem;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-bottom:  2rem;
+}
+
+.campo{
+ margin-bottom:  1rem;
+
+
+}
+.campo label{
+    color: white;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+/*nosotros*/
+.contenedor-nosotros{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.fotos-nosotros img{
+width: 320px;
+padding: auto;
+
+}
+.contenedor-fotos{
+    margin: auto;
+}
+.parrafo-nosotros p{
+    margin: 6rem;
+}
+/*alquler/dptos*/
+
+.imagenes-alquiler img{
+    width: 320px;
+    padding: 1rem;
+    margin: 3rem;
+}
+
+ .contenedor-alquiler{
+    
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+
+ } 
+ 
